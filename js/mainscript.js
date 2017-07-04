@@ -140,9 +140,11 @@
 
         $(document).on('click', function(event){
           if($(event.target).hasClass('js-event-travel-carousel-next-button')){
+            event.preventDefault();
             TravelByEvent.carouselController.moveNext();
           }
           if($(event.target).hasClass('js-event-travel-carousel-back-button')){
+            event.preventDefault();
             TravelByEvent.carouselController.moveBack();
           }
         })
