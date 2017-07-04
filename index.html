@@ -6,87 +6,7 @@
   <link rel="stylesheet" type="text/css" href="styles/normalize.css">
   <link rel="stylesheet" type="text/css" href="styles/general.css">
 	<link rel="stylesheet" type="text/css" href="styles/eventful.css">
-  <style type="text/css">
-    /**
-     * Copied from booking.com
-     */
-    .rlt-left, .rilt-left {
-        float: left;
-    }
-    .rilt-left, .rilt-right {
-        width: 49%!important;
-        padding: 0 .5% 0 0!important;
-        margin: 0!important;
-    }
-    .rlt-right, .rilt-right {
-        float: right;
-    }
-    .rilt-left, .rilt-right {
-        width: 49%!important;
-        padding: 0 .5% 0 0!important;
-        margin: 0!important;
-    }
-    /**
-     * My styles
-     */
-    .event-travel-containing-box{
-        border: 1px solid #e9f0fa;
-        border-radius: 4px;
-        padding: 15px;
-        margin-bottom: 10px;
-        position: relative;
-        overflow: hidden;
-        z-index: 1;
-    }
-    .event-travel-booking-button {
-        cursor: pointer;
-        border-radius: 6px;
-        padding: 5px 25px;
-        line-height: 34px;
-        font-size: 16px;
-        border: 0;
-        color: #fff;
-        background-color: #07c;
-    }
-    .event-travel-main-title {
-      margin: 0 50px 15px 0;
-      float: left;
-      color:#07c;
-      font-weight: normal;
-      font-size: 24px;
-    }
-    .event-travel-main-image {
-      float:left;
-    }
-    .event-travel-event-details {
-      float:left; margin-left: 10px;
-    }
-    .event-travel-date {
-      font-size:18px;
-      text-transform: uppercase; 
-      margin-bottom: 5px;
-      display: inline-block;font-weight: 
-      bold;
-    }
-    .event-travel-location {
-      font-size:18px;
-      color:#07c;
-      margin:0 0 15px;
-    }
-    .event-travel-subject {
-      margin:0;
-      color:#383838;
-      font-size:21;
-      font-weight:normal;
-    }
-    .event-travel-additional-info {
-      height: 80px;
-      overflow: auto;
-    }
-    .eventful-badge {
-      float: left;
-    }
-  </style>
+  <link rel="stylesheet" type="text/css" href="styles/custom.css">
 </head>
 <body>
 	<div class="top-bar"></div>
@@ -96,6 +16,7 @@
        
     </div>
     <div class="rilt-right">
+    <!--[TRAVEL BY EVENT START]-->
       <div class="event-travel-containing-box">
         <h2 class="event-travel-main-title">Events and Concerts in the world</h2>
         <div class="eventful-badge eventful-small">
@@ -103,30 +24,80 @@
             alt="Local Events, Concerts, Tickets">
           <p><a href="http://eventful.com/">Events</a> by Eventful</p>
         </div>
-        <div>
-          <img src="http://s4.evcdn.com/images/block250/I0-001/002/550/131-6.png_/star-wars-in-concert-31.png" class="event-travel-main-image">
-          <div class="event-travel-event-details" >
-            <span class="event-travel-date">April 14th 2017</span>
-            <h4 class="event-travel-location">Austria, Vienna</h4>
-            <h3 class="event-travel-subject" >Star Wars In Concert</h3>
-            <p>In An Arena Far, Far Away</p>
-            <div class="event-travel-additional-info">
-              
-            </div>
-            <button type="button" class="event-travel-booking-button">
-              <span>Find accommodation</span>
-            </button>
-          </div>
-        </div>
-        
-      </div>
-    </div>
-   
+        <div class="event-travel-carousel-frame">
+          <a href="#" class="event-travel-carousel-button event-travel-carousel-next-button js-event-travel-carousel-next-button">></a>
+          <a href="#" class="event-travel-carousel-button event-travel-carousel-back-button js-event-travel-carousel-back-button"><</a>
+          <ul class="event-travel-carousel-container js-event-travel-carousel-container">
+            
+            <li class="event-travel-carousel-frame">
+              <a href="http://google.com" target="_blank">
+                <img src="http://s4.evcdn.com/images/block250/I0-001/002/550/131-6.png_/star-wars-in-concert-31.png" class="event-travel-main-image">
+              </a>
+              <div class="event-travel-event-details" >
+                <a href="http://google.com" target="_blank">
+                  <h3 class="event-travel-subject" >Star Wars In Concert</h3>
+                  <span class="event-travel-date">April 14th 2017</span>
+                  <h4 class="event-travel-location">Austria, Vienna</h4>
+                </a>
+                <p>In An Arena Far, Far Away</p>
+                <div class="event-travel-additional-info"></div>
+                <button type="button" class="event-travel-booking-button">
+                  <span>Find accommodation</span>
+                </button>
+              </div>
+            </li>
+            
+            <li class="event-travel-carousel-frame">
+              <a href="http://google.com" target="_blank">
+                <img src="http://s4.evcdn.com/images/block250/I0-001/002/550/131-6.png_/star-wars-in-concert-31.png" class="event-travel-main-image">
+              </a>
+              <div class="event-travel-event-details" >
+                <a href="http://google.com" target="_blank">
+                  <h3 class="event-travel-subject" >Star Wars In Concert</h3>
+                  <span class="event-travel-date">April 14th 2017</span>
+                  <h4 class="event-travel-location">Austria, Vienna</h4>
+                </a>
+                <p>In An Arena Far, Far Away</p>
+                <div class="event-travel-additional-info"></div>
+                <button type="button" class="event-travel-booking-button">
+                  <span>Find accommodation</span>
+                </button>
+              </div>
+            </li>
 
-		
+          </ul>
+        </div>
+      </div>
+    <!--[TRAVEL BY EVENT END]-->
+    </div>
 	</div>
+
+  <!--[UNDERSCORE TEMPLATES START]-->
+    <script type="text/template" id="event-travel-carousel-frame">
+      <li class="event-travel-carousel-frame">
+              <a href="<%= eventful_link %>" target="_blank">
+                <img src="<%= image_url %>" class="event-travel-main-image" width="250" height="250">
+              </a>
+              <div class="event-travel-event-details" >
+                <a href="<%= eventful_link %>" target="_blank">
+                  <h3 class="event-travel-subject" ><%= event_subject %></h3>
+                  <span class="event-travel-date"><%= event_date %></span>
+                  <h4 class="event-travel-location"><%= event_location %></h4>
+                </a>
+                <p><%= venue_name %></p>
+                <!-- <div class="event-travel-additional-info"><%= additional_info %>></div> -->
+                <button type="button" class="event-travel-booking-button">
+                  <span>Find accommodation</span>
+                </button>
+              </div>
+            </li>
+    </script>
+  <!--[UNDERSCORE TEMPLATES END]-->
+  <script type="text/javascript" src="data/fakedata.js"></script>
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"
     integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
     crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/underscore-min.js"></script>
+    <script type="text/javascript" src="js/mainscript.js"></script>
 </body>
 </html>

@@ -1,0 +1,134 @@
+/**
+     * Copied from booking.com
+     */
+    .rlt-left, .rilt-left {
+        float: left;
+    }
+    .rilt-left, .rilt-right {
+        width: 49%!important;
+        padding: 0 .5% 0 0!important;
+        margin: 0!important;
+    }
+    .rlt-right, .rilt-right {
+        float: right;
+    }
+    .rilt-left, .rilt-right {
+        width: 49%!important;
+        padding: 0 .5% 0 0!important;
+        margin: 0!important;
+    }
+    /**
+     * My styles
+     */
+    .event-travel-containing-box{
+        border: 1px solid #b9d6ff;
+        border-radius: 4px;
+        padding: 15px;
+        margin-bottom: 10px;
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+    }
+    .event-travel-booking-button {
+        cursor: pointer;
+        border-radius: 6px;
+        padding: 5px 25px;
+        line-height: 34px;
+        font-size: 16px;
+        border: 0;
+        color: #fff;
+        background-color: #07c;
+    }
+    .event-travel-main-title {
+      margin: 0 50px 15px 0;
+      float: left;
+      color:#07c;
+      font-weight: normal;
+      font-size: 24px;
+    }
+    .event-travel-main-image {
+      float:left;
+    }
+    .event-travel-event-details {
+      float:left; 
+      margin-left: 10px;
+      width: 240px;
+    }
+    .event-travel-date {
+      font-size:18px;
+      text-transform: uppercase; 
+      margin-bottom: 5px;
+      display: inline-block;
+      font-weight: bold;
+      color: #07c;
+    }
+    .event-travel-location {
+      font-size:18px;
+      color:#003580;
+      margin:0 0 15px;
+    }
+    .event-travel-subject {
+      margin:0 0 10px;
+      color:#383838;
+      font-size:21px;
+    }
+    .event-travel-additional-info {
+      height: 80px;
+      overflow: auto;
+    }
+    .eventful-badge {
+      float: left;
+    }
+    .event-travel-containing-box a {
+      text-decoration: none;
+    }
+    .event-travel-carousel-frame {
+      position: relative;
+      overflow: hidden;
+      width: 510px;
+    }
+    .event-travel-carousel-container {
+      width: 5100px;
+      height: 250px;
+      margin: 0;
+      padding: 0;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    .event-travel-carousel-frame {
+      width: 510px;
+      height: 250px;
+      display: block;
+      float: left;
+    }
+    .event-travel-carousel-button {
+      width: 30px;
+      height: 250px;
+      background-color: #000;
+      opacity: 0.1;
+      color: #fff;
+      position: absolute;
+      display: block;
+      z-index: 9999;
+      line-height: 250px;
+      font-size: 21px;
+      text-align: center;
+      transition: opacity .5s;
+    }
+    .event-travel-carousel-button:hover {
+      opacity: 0.5;
+      transition: opacity .5s;
+    }
+
+    .event-travel-carousel-next-button {
+      right: 0;
+      top: 0;
+    }
+
+    .event-travel-carousel-back-button {
+      background-color: #fff;
+      color: #000;
+      left: 0;
+      top: 0;
+    }
