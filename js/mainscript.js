@@ -1,3 +1,10 @@
+import _ from 'underscore';
+import jQuery from 'jquery';
+import {fakeData} from './../data/fakedata';
+import * as template from './template.html';
+
+var $ = jQuery;
+
 /**
        * The main namespace
        */
@@ -19,7 +26,7 @@
         /**
          * Get the template once 
          */
-        var _template = _.template($('#event-travel-carousel-frame').html());
+        var _template = _.template(template);
 
         /**
          * Main constructor function
